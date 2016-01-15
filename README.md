@@ -58,7 +58,7 @@ Some MDL elements are not in the list because we don't have to register them, so
 1. In your project install the plugin via `jspm` with following command
 
 ```
-  $ jspm install github:redpelicans/aurelia-material
+  $ jspm install github:clarketm/aurelia-material
 ```
 
 2. Make sure you use [manual bootstrapping](http://aurelia.io/docs#startup-and-configuration). In order to do so open your `index.html` and locate the element with the attribute aurelia-app:
