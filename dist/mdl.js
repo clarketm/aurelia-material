@@ -10,7 +10,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 var _aureliaFramework = require('aurelia-framework');
 
-var _githubGoogleMaterialDesignLite106Material = require('github:google/material-design-lite@1.0.6/material');
+var _githubMaterialDesignLite = require('github/material-design-lite');
 
 var mdlTypes = {
     button: {
@@ -87,7 +87,7 @@ function manageRipple(element) {
     var elts = element.getElementsByClassName(".mdl-js-ripple-effect");
     for (var i = 0; i < elts.length; i++) {
         var elt = elts[i];
-        _githubGoogleMaterialDesignLite106Material.componentHandler.upgradeElement(elt, "MaterialRipple");
+        _githubMaterialDesignLite.componentHandler.upgradeElement(elt, "MaterialRipple");
     }
 }
 
@@ -113,7 +113,7 @@ function upgradeElement(element, type) {
     try {
         for (var _iterator = js[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
             var _type = _step.value;
-            _githubGoogleMaterialDesignLite106Material.componentHandler.upgradeElement(element, _type);
+            _githubMaterialDesignLite.componentHandler.upgradeElement(element, _type);
         }
     } catch (err) {
         _didIteratorError = true;
